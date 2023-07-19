@@ -17,14 +17,14 @@ function Menu() {
         {
           pizzaData.map((data) => {
             return (
-              <div className='pizza' id={data.soldOut ? "gray":" "}>
+              <div id={data.soldOut ? "gray":"normal"}>
                 <div className='pizzaImage'>
                   <img src={data.photoName}></img>
                 </div>
                 <div className='pizzaContent'>
                   <h2>{data.name}</h2>
                   <p>{data.ingredients}</p>
-                  <h3>{data.price}</h3>
+                  <h3>{(data.soldOut) ? "Sold Out " : data.price}</h3>
                 </div>
 
               </div>
