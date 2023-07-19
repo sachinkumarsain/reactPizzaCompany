@@ -17,7 +17,7 @@ function Menu() {
         {
           pizzaData.map((data) => {
             return (
-              <div className='pizza' id={{data.soldOut:}}>
+              <div className='pizza' id={data.soldOut ? "gray":" "}>
                 <div className='pizzaImage'>
                   <img src={data.photoName}></img>
                 </div>

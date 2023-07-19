@@ -39,3 +39,6 @@ section , .pizzaArea{
     width: 100%;
     height: 100%;
 }
+.gray{
+    background-color: rgb(206, 206, 206,0.5);
+}
